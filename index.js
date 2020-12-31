@@ -1,0 +1,78 @@
+
+const root = document.getElementById("home")
+
+const genRandomNumberRange = (min, max) => {
+    return Math.floor(Math.random() * (min + max) + min)
+}
+
+const rotate = (index) => {
+    const boxes = document.querySelectorAll("div.circle")
+    boxes.forEach(box => {
+        box.style.transform = "rotate" +
+            `(${String(Number(box.dataset.rotationStart) + 
+                Number(box.dataset.rotationSpeed) * index /2)}deg)`
+    })
+}
+
+const genCircles = () => {
+    let index = 0
+    while (index < 35) {
+        const circle = document.createElement('div')
+        circle.className = "circle"
+        const size = genRandomNumberRange(100, 2000)
+        const sizeProperty = String(size) + "px"
+
+        circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))
+        let min = Math.ceil(2);
+        let max = Math.floor(3);
+
+        circle.dataset.rotationSpeed = String(Math.floor(Math.random() * (min + max) + min))
+
+        circle.style.transform = "rotate" + `(${circle.dataset.rotationStart}deg)`
+        circle.style.width = sizeProperty
+        circle.style.height = sizeProperty
+        circle.style.borderRadius = "50%"
+
+        circle.style.left = "calc" + `(50% - ${size/2}px)`
+        circle.style.top = "calc" + `(50% - ${size/2}px)`
+        //circle.style.zIndex = `-${String(index)}`
+
+        let starIndex = 0
+        while (starIndex < 700) {
+            const colors = [
+                '#1175ff',
+                '#bbff00',
+                '#37cbff',
+                '#1b91f5',
+                '#6ea1e2',
+                '#602ed7']
+            const star = document.createElement("div")
+            star.className = "star5px"
+            star.style.left = String(genRandomNumberRange(1, 100)) + "%"
+            star.style.top = String(genRandomNumberRange(1, 100)) + "%"
+            star.style.backgroundColor = `${String(colors[genRandomNumberRange(0, 6)])}`
+            circle.append(star)
+            starIndex++
+        }
+        root.append(circle)
+        index++
+    }
+}
+
+
+async function runRotate() {
+    let index = 0
+    while (index < Infinity) {
+        await new Promise(r => setTimeout(r, 150));
+        rotate(index)
+        index++
+    }
+}
+
+genCircles()
+runRotate()
+
+
+
+
+

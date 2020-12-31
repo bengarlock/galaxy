@@ -1,0 +1,79 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: rgb(40, 41, 48);
+}
+
+.overflow-wrap {
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.circle {
+    position: absolute;
+    background-color: transparent;
+    transition: 3s;
+    overflow: hidden;
+
+}
+
+.star5px {
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: #4391ff;
+    position: absolute;
+    transition: 1s;
+}
+.star5px:hover {
+    width: 10px;
+    height: 10px;
+    transition: 1s;
+}
+
+#name {
+    padding-left: 20px;
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 65%;
+    left: 2%;
+    z-index: 2;
+    border: 2px solid white;
+}
+
+#portfolio {
+    transition: .5s;
+    user-select: none;
+    border: 2px solid white;
+    width: 200px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+#portfolio:hover {
+    background-color: #5a2bbd;
+    transition: .5s;
+}
+
+#full-name {
+    color: #d81e6a;
+}
+
+#about{
+
+}
