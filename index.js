@@ -16,10 +16,11 @@ const rotate = (index) => {
 
 const genCircles = () => {
     let index = 0
+    //adjust number of circles
     while (index < 20) {
         const circle = document.createElement('div')
         circle.className = "circle"
-        const size = genRandomNumberRange(100, 1200)
+        const size = genRandomNumberRange(100, 2000)
         const sizeProperty = String(size) + "px"
 
         circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))
@@ -38,15 +39,17 @@ const genCircles = () => {
         //circle.style.zIndex = `-${String(index)}`
 
         let starIndex = 0
-        while (starIndex < 2000) {
+        //adjust number of stars
+        while (starIndex < 1000) {
             const colors = [
-                '#6eabff',
+                '#ff0303',
                 '#bbff00',
-                '#0067ff',
+                '#4565ff',
                 '#1b91f5',
                 '#6ea1e2',
                 '#9c75ff',
-                '#ef0000',]
+                '#ffffff',
+            ]
             const star = document.createElement("div")
             star.className = "star5px"
             star.style.left = String(genRandomNumberRange(1, 100)) + "%"

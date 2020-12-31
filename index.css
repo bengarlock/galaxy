@@ -2,6 +2,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background: rgb(40, 41, 48);
+    margin: 0;
 }
 
 .overflow-wrap {
@@ -15,18 +16,16 @@ section {
 
 #home {
     height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-
-
 
 .circle {
     position: absolute;
     background-color: transparent;
     transition: 3s;
     overflow: hidden;
-
 }
 
 .star5px {
@@ -37,6 +36,7 @@ section {
     position: absolute;
     transition: 1s;
 }
+
 .star5px:hover {
     width: 10px;
     height: 10px;
@@ -72,8 +72,4 @@ section {
 
 #full-name {
     color: #d81e6a;
-}
-
-#about{
-
 }
