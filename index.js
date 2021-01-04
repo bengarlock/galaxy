@@ -4,6 +4,8 @@ let numberOfStars = 1000
 let numberofCircles = 10
 let circleSize = 2000
 
+console.log(performance.now())
+
 const colors = [
     'red',
     '#bbff00',
