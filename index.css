@@ -1,7 +1,8 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background: rgb(40, 41, 48);
+    /*background: rgb(40, 41, 48);*/
+    background: black;
     margin: 0;
     overflow: hidden;
 }
