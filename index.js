@@ -35,7 +35,7 @@ const genCircles = () => {
         const circle = document.createElement('div')
         circle.className = "circle"
         //radius of circles
-        const size = genRandomNumberRange(50, circleSize)
+        const size = genRandomNumberRange(100, circleSize)
         const sizeProperty = String(size) + "px"
 
         circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))
