@@ -1,5 +1,5 @@
 
-const root = document.getElementById("home")
+const root = document.getElementById("galaxy-wrapper")
 
 const genRandomNumberRange = (min, max) => {
     return Math.floor(Math.random() * (min + max) + min)

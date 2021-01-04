@@ -3,22 +3,17 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background: rgb(40, 41, 48);
     margin: 0;
-}
-
-.overflow-wrap {
     overflow: hidden;
 }
 
-section {
-    position: relative;
-    overflow: hidden;
-}
 
-#home {
+
+#galaxy-home {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 .circle {
