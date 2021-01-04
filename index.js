@@ -28,18 +28,13 @@ const genCircles = () => {
         let max = Math.floor(3);
 
         circle.dataset.rotationSpeed = String(Math.floor(Math.random() * (min + max) + min))
-
         circle.style.transform = "rotate" + `(${circle.dataset.rotationStart}deg)`
         circle.style.width = sizeProperty
         circle.style.height = sizeProperty
-        circle.style.borderRadius = "50%"
-
         circle.style.left = "calc" + `(50% - ${size/2}px)`
         circle.style.top = "calc" + `(50% - ${size/2}px)`
-        //circle.style.zIndex = `-${String(index)}`
 
         let starIndex = 0
-        //adjust number of stars
         while (starIndex < 1000) {
             const colors = [
                 '#ff0303',

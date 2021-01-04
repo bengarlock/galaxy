@@ -26,6 +26,7 @@ section {
     background-color: transparent;
     transition: 3s;
     overflow: hidden;
+    border-radius: 50%;
 }
 
 .star5px {
