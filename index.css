@@ -60,16 +60,18 @@ section {
     z-index: 2;
 }
 
-#portfolio {
+#my-work {
     transition: .5s;
     user-select: none;
     border: 2px solid white;
     width: 200px;
     text-align: center;
-    margin-left: 250px;
+    margin-left: 50%;
+    margin-top: 5% ;
+    transform: translate(-50%);
 }
 
-#portfolio:hover {
+#my-work:hover {
     background-color: #5a2bbd;
     transition: .5s;
 }
