@@ -4,7 +4,7 @@ const root = document.getElementById("galaxy-wrapper")
 const compPerformance = performance.now()
 
 let numberOfStars = 500 - compPerformance
-let numberofCircles = 25
+let numberofCircles = 15
 let circleSize = 2000
 
 console.log("compPerformance", compPerformance)
