@@ -24,8 +24,8 @@ const genCircles = () => {
         const sizeProperty = String(size) + "px"
 
         circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))
-        let min = Math.ceil(2);
-        let max = Math.floor(3);
+        let min = Math.ceil(1);
+        let max = Math.floor(2);
 
         circle.dataset.rotationSpeed = String(Math.floor(Math.random() * (min + max) + min))
         circle.style.transform = "rotate" + `(${circle.dataset.rotationStart}deg)`
