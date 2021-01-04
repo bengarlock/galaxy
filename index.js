@@ -17,10 +17,10 @@ const rotate = (index) => {
 const genCircles = () => {
     let index = 0
     //adjust number of circles
-    while (index < 20) {
+    while (index < 15) {
         const circle = document.createElement('div')
         circle.className = "circle"
-        const size = genRandomNumberRange(100, 2000)
+        const size = genRandomNumberRange(100, 1000)
         const sizeProperty = String(size) + "px"
 
         circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))

@@ -25,52 +25,10 @@ body {
 }
 
 .star5px {
-    width: 1px;
-    height: 1px;
+    width: 1.5px;
+    height: 1.5px;
     border-radius: 50%;
     background: #4391ff;
     position: absolute;
     transition: 1s;
-}
-
-.star5px:hover {
-    width: 10px;
-    height: 10px;
-    transition: 1s;
-}
-
-#name {
-    padding-left: 20px;
-    color: white;
-    font-size: 30px;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(62, 62, 81, 0.5);
-    text-align: center;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-#my-work {
-    transition: .5s;
-    user-select: none;
-    border: 2px solid white;
-    width: 200px;
-    text-align: center;
-    margin-left: 50%;
-    margin-top: 5% ;
-    transform: translate(-50%);
-}
-
-#my-work:hover {
-    background-color: #5a2bbd;
-    transition: .5s;
-}
-
-#full-name {
-    color: #d81e6a;
 }
