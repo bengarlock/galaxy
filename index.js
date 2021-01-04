@@ -1,5 +1,19 @@
 
 const root = document.getElementById("galaxy-wrapper")
+let numberOfStars = 1000
+let numberofCircles = 10
+let circleSize = 2000
+
+const colors = [
+    'red',
+    '#bbff00',
+    '#4565ff',
+    '#1b91f5',
+    '#6ea1e2',
+    '#9c75ff',
+    '#ffffff',
+]
+
 
 const genRandomNumberRange = (min, max) => {
     return Math.floor(Math.random() * (min + max) + min)
@@ -17,10 +31,11 @@ const rotate = (index) => {
 const genCircles = () => {
     let index = 0
     //adjust number of circles
-    while (index < 15) {
+    while (index < numberofCircles) {
         const circle = document.createElement('div')
         circle.className = "circle"
-        const size = genRandomNumberRange(100, 1000)
+        //radius of circles
+        const size = genRandomNumberRange(50, circleSize)
         const sizeProperty = String(size) + "px"
 
         circle.dataset.rotationStart = String(Math.floor(Math.random() * Math.floor(360)))
@@ -35,16 +50,8 @@ const genCircles = () => {
         circle.style.top = "calc" + `(50% - ${size/2}px)`
 
         let starIndex = 0
-        while (starIndex < 1000) {
-            const colors = [
-                '#ff0303',
-                '#bbff00',
-                '#4565ff',
-                '#1b91f5',
-                '#6ea1e2',
-                '#9c75ff',
-                '#ffffff',
-            ]
+        while (starIndex < numberOfStars) {
+
             const star = document.createElement("div")
             star.className = "star5px"
             star.style.left = String(genRandomNumberRange(1, 100)) + "%"
