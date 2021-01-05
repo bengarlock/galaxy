@@ -5,7 +5,7 @@ const compPerformance = performance.now()
 
 //configure star setup here
 let numberOfStars = 500 - compPerformance
-let numberofCircles = 15
+let numberofCircles = 5
 let circleSize = 2000
 
 const colors = [
