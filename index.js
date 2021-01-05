@@ -4,7 +4,7 @@ const root = document.getElementById("galaxy-wrapper")
 const compPerformance = performance.now()
 
 //configure star setup here
-let numberOfStars = 500 - compPerformance
+let numberOfStars = 800 - compPerformance
 let numberofCircles = 5
 let circleSize = 2000
 
