@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    async function runRotate() {
+    const runRotate = async() => {
         let index = 0
         while (index < Infinity) {
             await new Promise(r => setTimeout(r, 150));
